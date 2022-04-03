@@ -8,8 +8,8 @@ var port = process.env.PORT || 8080;
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
-//var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST) + 'https://codepen.io/jsramsey87/pen/VwyPNLz,https://codepen.io/jsramsey87/full/VwyPNLz,https://www.geocities.ws/jaredramseydev/MERNStackOrderApp/index.html';
-var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
+//var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
+var originWhitelist = ['https://codepen.io/jsramsey87/pen/VwyPNLz','https://codepen.io/jsramsey87/full/VwyPNLz','https://www.geocities.ws/jaredramseydev/MERNStackOrderApp/index.html'];
 function parseEnvList(env) {
   if (!env) {
     return [];
