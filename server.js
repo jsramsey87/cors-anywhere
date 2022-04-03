@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
-var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST) + 'https://codepen.io/jsramsey87/pen/VwyPNLz,https://codepen.io/jsramsey87/full/VwyPNLz,https://www.geocities.ws/jaredramseydev/MERNStackOrderApp/index.html';
+var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST) + 'https://cdpn.io,https://www.geocities.ws';
 function parseEnvList(env) {
   if (!env) {
     return [];
